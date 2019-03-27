@@ -1,13 +1,17 @@
 // pages/crafts/index.js
 const PURCHASE_DATA = require('./datas/purchase.js');
 
+const DataHandler = require('./datahandler/datahandler.js');
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    data: PURCHASE_DATA
+    data: PURCHASE_DATA,
+    sortType: '',
+    sortKey: ''
   },
 
   /**
@@ -64,5 +68,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  sortHandler: function (e) {
+    const id = e.target.id;
+    const d = DataHandler.getSortedData(id, 'asc', this.data.data);
+    this.setData({
+      data: d
+    });
   }
 })

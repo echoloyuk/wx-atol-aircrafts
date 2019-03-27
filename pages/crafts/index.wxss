@@ -5,7 +5,7 @@
 .crafts-table {
   display: table;
   border-collapse: collapse;
-  width: 100%;
+  min-width: 702rpx;
 }
 .table-tr {
   display: table-row;
@@ -19,4 +19,39 @@
 .table-th {
   font-weight: 500;
   text-align: center;
+}
+.type {
+  min-width: 160rpx;
+}
+.class {
+  min-width: 80rpx;
+}
+.capacity {
+  min-width: 60rpx;
+}
+.range {
+  min-width: 100rpx;
+}
+.effi {
+  min-width: 120rpx;
+}
+.speed {
+  min-width: 80rpx;
+}
+.price {
+  min-width: 80rpx;
+}
+.intr, .end {
+  min-width: 120rpx;
+}
+.sort-icon {
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnElEQVQ4T83SsQ3CQBBE0eeQlJwOQOQIaoCYQkiBGqgDIVEABUBCFwQUgEiQdciBbfnsk5x4wtPM353TZnoq65k3fMAWX5xjVdsqLHHDDys8miAxwARPjIvQG3O86pAmwAh3TGvmAFzgU35vAlywiXS+Yt0GOGDfcRtHBN9f5Q3C1DA9RWGLsE0FcMIsJV380a4OSMxWbcM/5c5aOYAZExEf2+AKAAAAAElFTkSuQmCC) no-repeat center;
+  background-size: cover;
+  vertical-align: 1rpx;
+}
+.sort-icon.down {
+  transform: rotateZ(180deg);
 }
