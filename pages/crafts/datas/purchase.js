@@ -72,7 +72,7 @@ module.exports = [
     "capacity": "117",
     "payload": "0",
     "range": "3815",
-    "fuelEfficient": "7.3/7.9*",
+    "fuelEfficient": "7.3",
     "speed": "0.77",
     "price": "44",
     "introDate": "1999.07",
@@ -361,65 +361,19 @@ module.exports = [
     "endDate": "2030"
   },
   {
-    "type": "Boeing B737-7F",
-    "detailUrl": "/wiki/Boeing_737",
-    "className": [
-      "C"
-    ],
-    "capacity": "0",
-    "payload": "28",
-    "range": "4925",
-    "fuelEfficient": "9.1",
-    "speed": "0.78",
-    "price": "71",
-    "introDate": "2019.05",
-    "endDate": "2030"
-  },
-  {
     "type": "Boeing B737-8",
     "detailUrl": "/wiki/Boeing_737",
     "className": [
       "B",
       "E"
     ],
-    "capacity": "189/200**",
+    "capacity": "200",
     "payload": "0",
     "range": "6704",
     "fuelEfficient": "9.3",
     "speed": "0.79",
-    "price": "99/120**",
-    "introDate": "2019.10/2017.05**",
-    "endDate": "2030"
-  },
-  {
-    "type": "Boeing B737-9 (AT4 Only)",
-    "detailUrl": "/wiki/Boeing_737",
-    "className": [
-      "B",
-      "E"
-    ],
-    "capacity": "215",
-    "payload": "0",
-    "range": "6658",
-    "fuelEfficient": "9.4",
-    "speed": "0.79",
-    "price": "116",
-    "introDate": "2020.03",
-    "endDate": "2030"
-  },
-  {
-    "type": "Boeing B737-9F",
-    "detailUrl": "/wiki/Boeing_737",
-    "className": [
-      "C"
-    ],
-    "capacity": "0",
-    "payload": "40",
-    "range": "4640",
-    "fuelEfficient": "9.1",
-    "speed": "0.78",
-    "price": "94",
-    "introDate": "2019.09",
+    "price": "120",
+    "introDate": "2017.05",
     "endDate": "2030"
   },
   {
@@ -565,9 +519,9 @@ module.exports = [
     "range": "14815",
     "fuelEfficient": "8.6",
     "speed": "0.86",
-    "price": "362/430**",
+    "price": "430",
     "introDate": "2012.05",
-    "endDate": "2030/2017.07**"
+    "endDate": "2017.07"
   },
   {
     "type": "Boeing B747-8F",
@@ -580,7 +534,7 @@ module.exports = [
     "range": "8130",
     "fuelEfficient": "8.6",
     "speed": "0.86",
-    "price": "341/428**",
+    "price": "428",
     "introDate": "2012.05",
     "endDate": "2030"
   },
@@ -592,12 +546,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "239/242*",
+    "capacity": "239",
     "payload": "0",
     "range": "7222",
     "fuelEfficient": "7.4",
-    "speed": "0.70/0.80**",
-    "price": "107/109*",
+    "speed": "0.80",
+    "price": "107",
     "introDate": "1983.01",
     "endDate": "2001.08"
   },
@@ -611,7 +565,7 @@ module.exports = [
     "payload": "42",
     "range": "5834",
     "fuelEfficient": "7.4",
-    "speed": "0.70/0.80**",
+    "speed": "0.80",
     "price": "99",
     "introDate": "1984.09",
     "endDate": "2005.06"
@@ -628,7 +582,7 @@ module.exports = [
     "payload": "0",
     "range": "6287",
     "fuelEfficient": "8.1",
-    "speed": "0.70/0.80**",
+    "speed": "0.80",
     "price": "140",
     "introDate": "1999.06",
     "endDate": "2009.07"
@@ -661,7 +615,7 @@ module.exports = [
     "range": "11825",
     "fuelEfficient": "7.3",
     "speed": "0.80",
-    "price": "164/138**",
+    "price": "138",
     "introDate": "1982.12",
     "endDate": "2018.02"
   },
@@ -678,7 +632,7 @@ module.exports = [
     "range": "11065",
     "fuelEfficient": "7.6",
     "speed": "0.80",
-    "price": "181/165**",
+    "price": "165",
     "introDate": "1986.11",
     "endDate": "2020.01"
   },
@@ -693,7 +647,7 @@ module.exports = [
     "range": "6025",
     "fuelEfficient": "7.6",
     "speed": "0.80",
-    "price": "175/196**",
+    "price": "196",
     "introDate": "1988.05",
     "endDate": "2023.05"
   },
@@ -710,7 +664,7 @@ module.exports = [
     "range": "10415",
     "fuelEfficient": "8.2",
     "speed": "0.80",
-    "price": "192/213**",
+    "price": "213",
     "introDate": "2000.12",
     "endDate": "2025.09"
   },
@@ -744,7 +698,7 @@ module.exports = [
     "range": "14690",
     "fuelEfficient": "8.1",
     "speed": "0.84",
-    "price": "308/347**",
+    "price": "347",
     "introDate": "1998.12",
     "endDate": "2030"
   },
@@ -764,71 +718,6 @@ module.exports = [
     "endDate": "2030"
   },
   {
-    "type": "Boeing B777-8X",
-    "detailUrl": "/wiki/Boeing_777",
-    "className": [
-      "F",
-      "B",
-      "E"
-    ],
-    "capacity": "470",
-    "payload": "0",
-    "range": "17220",
-    "fuelEfficient": "9.3",
-    "speed": "0.84",
-    "price": "302",
-    "introDate": "2021.07",
-    "endDate": "2030"
-  },
-  {
-    "type": "Boeing B777-9X",
-    "detailUrl": "/wiki/Boeing_777",
-    "className": [
-      "F",
-      "B",
-      "E"
-    ],
-    "capacity": "550",
-    "payload": "0",
-    "range": "15185",
-    "fuelEfficient": "9.3",
-    "speed": "0.84",
-    "price": "352",
-    "introDate": "2021.09",
-    "endDate": "2030"
-  },
-  {
-    "type": "Boeing B787-3",
-    "detailUrl": "/wiki/Boeing_787",
-    "className": [
-      "B",
-      "E"
-    ],
-    "capacity": "290",
-    "payload": "0",
-    "range": "5650",
-    "fuelEfficient": "8.5",
-    "speed": "0.85",
-    "price": "160",
-    "introDate": "2013.02",
-    "endDate": "2030"
-  },
-  {
-    "type": "Boeing B787-3F",
-    "detailUrl": "/wiki/Boeing_787",
-    "className": [
-      "C"
-    ],
-    "capacity": "0",
-    "payload": "56",
-    "range": "4750",
-    "fuelEfficient": "8.4",
-    "speed": "0.84",
-    "price": "150",
-    "introDate": "2013.10",
-    "endDate": "2030"
-  },
-  {
     "type": "Boeing B787-8",
     "detailUrl": "/wiki/Boeing_787",
     "className": [
@@ -836,12 +725,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "380/365**",
+    "capacity": "365",
     "payload": "0",
-    "range": "15200/\n13600*/\n13621**",
+    "range": "\n13621",
     "fuelEfficient": "8.5",
     "speed": "0.85",
-    "price": "211/229**",
+    "price": "229",
     "introDate": "2011.09",
     "endDate": "2030"
   },
@@ -853,13 +742,13 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "420/400**",
+    "capacity": "400",
     "payload": "0",
-    "range": "15700/\n14100*/\n14140**",
+    "range": "\n14140",
     "fuelEfficient": "8.5",
     "speed": "0.85",
-    "price": "237/267**",
-    "introDate": "2011.12/2014.07**",
+    "price": "267",
+    "introDate": "2014.07",
     "endDate": "2030"
   },
   {
@@ -1072,7 +961,7 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "380/360*",
+    "capacity": "380",
     "payload": "0",
     "range": "6116",
     "fuelEfficient": "6.3",
@@ -1089,7 +978,7 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "380/360*",
+    "capacity": "380",
     "payload": "0",
     "range": "10622",
     "fuelEfficient": "6.3",
@@ -1112,23 +1001,6 @@ module.exports = [
     "price": "160",
     "introDate": "1971.12",
     "endDate": "1989.12"
-  },
-  {
-    "type": "McDonnell Douglas DC-10-40",
-    "detailUrl": "/wiki/McDonnell_Douglas_DC-10",
-    "className": [
-      "F",
-      "B",
-      "E"
-    ],
-    "capacity": "360",
-    "payload": "0",
-    "range": "9254",
-    "fuelEfficient": "6.6",
-    "speed": "0.82",
-    "price": "175",
-    "introDate": "1973.01",
-    "endDate": "1983.05"
   },
   {
     "type": "McDonnell Douglas MD-11",
@@ -1350,7 +1222,7 @@ module.exports = [
     "range": "5700",
     "fuelEfficient": "7.8",
     "speed": "0.78",
-    "price": "64/71**",
+    "price": "71",
     "introDate": "2003.03",
     "endDate": "2023.03"
   },
@@ -1366,7 +1238,7 @@ module.exports = [
     "range": "6700",
     "fuelEfficient": "7.5",
     "speed": "0.78",
-    "price": "77/79**",
+    "price": "79",
     "introDate": "1996.09",
     "endDate": "2018.02"
   },
@@ -1409,12 +1281,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "150/189*",
+    "capacity": "150",
     "payload": "0",
     "range": "6900",
-    "fuelEfficient": "8.5/9.2**",
+    "fuelEfficient": "9.2",
     "speed": "0.78",
-    "price": "73/103*",
+    "price": "73",
     "introDate": "2014.12",
     "endDate": "2030"
   },
@@ -1425,12 +1297,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "220/236*",
+    "capacity": "220",
     "payload": "0",
     "range": "5600",
     "fuelEfficient": "7.7",
     "speed": "0.78",
-    "price": "109/115*/123**",
+    "price": "123",
     "introDate": "1994.03",
     "endDate": "2022.08"
   },
@@ -1458,12 +1330,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "380/320*",
+    "capacity": "380",
     "payload": "0",
     "range": "13430",
     "fuelEfficient": "7.8",
     "speed": "0.82",
-    "price": "194/164*/180**",
+    "price": "180",
     "introDate": "1998.09",
     "endDate": "2016.05"
   },
@@ -1474,11 +1346,11 @@ module.exports = [
       "C"
     ],
     "capacity": "0",
-    "payload": "70/60*",
+    "payload": "70",
     "range": "7400",
     "fuelEfficient": "8.4",
     "speed": "0.82",
-    "price": "192/152*/180**",
+    "price": "180",
     "introDate": "2009.05",
     "endDate": "2028.01"
   },
@@ -1490,48 +1362,14 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "440/378*",
+    "capacity": "440",
     "payload": "0",
     "range": "10830",
     "fuelEfficient": "7.6",
     "speed": "0.82",
-    "price": "228/201*/220**",
+    "price": "220",
     "introDate": "1993.12",
     "endDate": "2017.04"
-  },
-  {
-    "type": "Airbus A330-800",
-    "detailUrl": "/wiki/Airbus_A330",
-    "className": [
-      "F",
-      "B",
-      "E"
-    ],
-    "capacity": "380",
-    "payload": "0",
-    "range": "14550",
-    "fuelEfficient": "9.1",
-    "speed": "0.84",
-    "price": "223/280**",
-    "introDate": "2018.03",
-    "endDate": "2030"
-  },
-  {
-    "type": "Airbus A330-900",
-    "detailUrl": "/wiki/Airbus_A330",
-    "className": [
-      "F",
-      "B",
-      "E"
-    ],
-    "capacity": "440",
-    "payload": "0",
-    "range": "11390",
-    "fuelEfficient": "9.1",
-    "speed": "0.84",
-    "price": "251/316**",
-    "introDate": "2018.09",
-    "endDate": "2030"
   },
   {
     "type": "Airbus A340-200",
@@ -1541,12 +1379,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "350/338*",
+    "capacity": "350",
     "payload": "0",
     "range": "15000",
     "fuelEfficient": "7.6",
     "speed": "0.82",
-    "price": "175/185**",
+    "price": "185",
     "introDate": "1992.12",
     "endDate": "1998.11"
   },
@@ -1558,12 +1396,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "380/378*",
+    "capacity": "380",
     "payload": "0",
     "range": "13700",
     "fuelEfficient": "7.5",
     "speed": "0.82",
-    "price": "203/210**",
+    "price": "210",
     "introDate": "1992.06",
     "endDate": "2008.01"
   },
@@ -1575,12 +1413,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "410/405*",
+    "capacity": "410",
     "payload": "0",
     "range": "16060",
     "fuelEfficient": "7.9",
     "speed": "0.83",
-    "price": "221/218*/250**",
+    "price": "250",
     "introDate": "2002.12",
     "endDate": "2027.08"
   },
@@ -1592,12 +1430,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "440/475*",
+    "capacity": "440",
     "payload": "0",
     "range": "14350",
     "fuelEfficient": "8.0",
     "speed": "0.83",
-    "price": "240/260*/295**",
+    "price": "295",
     "introDate": "2002.05",
     "endDate": "2029.05"
   },
@@ -1609,12 +1447,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "440/336*",
+    "capacity": "440",
     "payload": "0",
     "range": "15700",
-    "fuelEfficient": "8.3/8.7*",
+    "fuelEfficient": "8.3",
     "speed": "0.85",
-    "price": "245/179*",
+    "price": "245",
     "introDate": "2015.03",
     "endDate": "2030"
   },
@@ -1626,12 +1464,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "475/390*/410**",
+    "capacity": "410",
     "payload": "0",
     "range": "15000",
     "fuelEfficient": "8.8",
     "speed": "0.85",
-    "price": "270/230*/271**",
+    "price": "271",
     "introDate": "2014.09",
     "endDate": "2030"
   },
@@ -1642,11 +1480,11 @@ module.exports = [
       "C"
     ],
     "capacity": "0",
-    "payload": "78/70*",
+    "payload": "78",
     "range": "9250",
     "fuelEfficient": "8.8",
     "speed": "0.85",
-    "price": "259/218*",
+    "price": "259",
     "introDate": "2014.12",
     "endDate": "2030"
   },
@@ -1658,12 +1496,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "550/440*/465**",
+    "capacity": "465",
     "payload": "0",
     "range": "15600",
-    "fuelEfficient": "8.8/9.2**",
+    "fuelEfficient": "9.2",
     "speed": "0.85",
-    "price": "317/247*/315**",
+    "price": "315",
     "introDate": "2015.07",
     "endDate": "2030"
   },
@@ -1675,12 +1513,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "700/800*/700**",
+    "capacity": "700",
     "payload": "0",
     "range": "15400",
     "fuelEfficient": "8.7",
     "speed": "0.89",
-    "price": "400/440*/490**",
+    "price": "490",
     "introDate": "2007.02",
     "endDate": "2030"
   },
@@ -1691,11 +1529,11 @@ module.exports = [
       "C"
     ],
     "capacity": "0",
-    "payload": "140/154*",
+    "payload": "140",
     "range": "10400",
     "fuelEfficient": "8.7",
     "speed": "0.89",
-    "price": "382/412*/520**",
+    "price": "520",
     "introDate": "2008.12",
     "endDate": "2030"
   },
@@ -1915,22 +1753,6 @@ module.exports = [
     "price": "63",
     "introDate": "1963.10",
     "endDate": "1995.06"
-  },
-  {
-    "type": "Ilyushin IL-62M",
-    "detailUrl": "/wiki/Ilyushin_IL-62",
-    "className": [
-      "B",
-      "E"
-    ],
-    "capacity": "186",
-    "payload": "0",
-    "range": "10000",
-    "fuelEfficient": "5.0",
-    "speed": "0.73",
-    "price": "69",
-    "introDate": "1969.05",
-    "endDate": "1997.10"
   },
   {
     "type": "Ilyushin IL-76",
@@ -2329,21 +2151,6 @@ module.exports = [
     "endDate": "2030"
   },
   {
-    "type": "Lockheed Martin L-1049G",
-    "detailUrl": "/wiki/Lockheed_L-1049",
-    "className": [
-      "E"
-    ],
-    "capacity": "95",
-    "payload": "0",
-    "range": "8700",
-    "fuelEfficient": "6.1",
-    "speed": "0.45",
-    "price": "32",
-    "introDate": "1960.01",
-    "endDate": "1967.01"
-  },
-  {
     "type": "Lockheed Martin L-1011-1",
     "detailUrl": "/wiki/Lockheed_L-1011",
     "className": [
@@ -2351,12 +2158,12 @@ module.exports = [
       "E",
       "(F**)"
     ],
-    "capacity": "256/400**",
+    "capacity": "400",
     "payload": "0",
     "range": "7871",
     "fuelEfficient": "6.2",
     "speed": "0.79",
-    "price": "110/182**",
+    "price": "182",
     "introDate": "1971.01",
     "endDate": "1984.12"
   },
@@ -2368,12 +2175,12 @@ module.exports = [
       "E",
       "(F**)"
     ],
-    "capacity": "256/400**",
+    "capacity": "400",
     "payload": "0",
     "range": "9140",
     "fuelEfficient": "6.2",
     "speed": "0.78",
-    "price": "119/187**",
+    "price": "187",
     "introDate": "1972.08",
     "endDate": "1985.12"
   },
@@ -2385,12 +2192,12 @@ module.exports = [
       "E",
       "(F**)"
     ],
-    "capacity": "246/330**",
+    "capacity": "330",
     "payload": "0",
     "range": "11279",
     "fuelEfficient": "6.4",
     "speed": "0.80",
-    "price": "129/160**",
+    "price": "160",
     "introDate": "1973.10",
     "endDate": "1986.12"
   },
@@ -2438,95 +2245,5 @@ module.exports = [
     "price": "420",
     "introDate": "1989.02",
     "endDate": "2030"
-  },
-  {
-    "type": "British Aerospace BAe146-100",
-    "detailUrl": "/wiki/British_Aerospace_146",
-    "className": [
-      "E"
-    ],
-    "capacity": "94",
-    "payload": "0",
-    "range": "3000",
-    "fuelEfficient": "6.3",
-    "speed": "0.63",
-    "price": "36",
-    "introDate": "1983.03",
-    "endDate": "1992.01"
-  },
-  {
-    "type": "British Aerospace BAe146-200",
-    "detailUrl": "/wiki/British_Aerospace_146",
-    "className": [
-      "E"
-    ],
-    "capacity": "112",
-    "payload": "0",
-    "range": "2910",
-    "fuelEfficient": "6.3",
-    "speed": "0.63",
-    "price": "44",
-    "introDate": "1983.02",
-    "endDate": "1993.07"
-  },
-  {
-    "type": "British Aerospace BAe146-300",
-    "detailUrl": "/wiki/British_Aerospace_146",
-    "className": [
-      "E"
-    ],
-    "capacity": "128",
-    "payload": "0",
-    "range": "2817",
-    "fuelEfficient": "6.3",
-    "speed": "0.65",
-    "price": "51",
-    "introDate": "1988.12",
-    "endDate": "1994.04"
-  },
-  {
-    "type": "Fokker F-28 *",
-    "detailUrl": "/wiki/Fokker_F-Series",
-    "className": [
-      "E"
-    ],
-    "capacity": "65",
-    "payload": "0",
-    "range": "2000",
-    "fuelEfficient": "4.6",
-    "speed": "0.70",
-    "price": "24",
-    "introDate": "1969.03",
-    "endDate": "1987.01"
-  },
-  {
-    "type": "Fokker F-70",
-    "detailUrl": "/wiki/Fokker_F-Series",
-    "className": [
-      "E"
-    ],
-    "capacity": "85",
-    "payload": "0",
-    "range": "3410",
-    "fuelEfficient": "6.4",
-    "speed": "0.70",
-    "price": "38",
-    "introDate": "1994.10",
-    "endDate": "1997.01"
-  },
-  {
-    "type": "Fokker F-100",
-    "detailUrl": "/wiki/Fokker_F-Series",
-    "className": [
-      "E"
-    ],
-    "capacity": "122",
-    "payload": "0",
-    "range": "3170",
-    "fuelEfficient": "6.5",
-    "speed": "0.77",
-    "price": "57",
-    "introDate": "1988.02",
-    "endDate": "1997.11"
   }
 ]
