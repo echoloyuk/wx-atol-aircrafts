@@ -1,0 +1,13 @@
+<view class="nav-container">
+  <view class="nav-header"></view>
+  <view class="nav-content-panel">
+    <view class="nav-content-row">
+      <navigator class="nav-link-item" url="/pages/crafts/index">
+        <text class="nav-link-text">Purchase AirCrafts</text>
+      </navigator>
+      <view class="nav-link-item">
+        <text class="nav-link-text">Rent AirCrafts</text>
+      </view>
+    </view>
+  </view>
+</view>

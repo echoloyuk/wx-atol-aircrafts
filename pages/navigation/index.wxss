@@ -1,0 +1,23 @@
+/* pages/navigation/index.wxss */
+.nav-header {
+  height: 200rpx;
+  background: #ccc;
+}
+.nav-content-panel {
+  padding: 24rpx;
+}
+.nav-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link-item {
+  text-align: center;
+  width: 340rpx;
+  height: 340rpx;
+  background: #ccc;
+}
+.nav-link-text {
+  text-align: center;
+  font-size: 28rpx;
+}
