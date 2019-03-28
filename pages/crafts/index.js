@@ -11,7 +11,17 @@ Page({
   data: {
     data: PURCHASE_DATA,
     sortType: '',
-    sortKey: ''
+    sortKey: '',
+    showType: true,
+    showClass: true,
+    showCapacity: true,
+    showRange: true,
+    showFuel: true,
+    showSpeed: true,
+    showPrice: true,
+    showIntro: true,
+    showEnd: true,
+    showPopup: false
   },
 
   /**
@@ -71,10 +81,26 @@ Page({
   },
 
   sortHandler: function (e) {
-    const id = e.target.id;
-    const d = DataHandler.getSortedData(id, 'asc', this.data.data);
+    const id = e.currentTarget.id;
+    const {
+      sortKey,
+      sortType
+    } = this.data;
+    let type, key;
+    if (sortKey === id) {
+      if (sortType === 'asc') {
+        type = 'desc';
+      } else {
+        type = 'asc';
+      }
+    } else {
+      type = 'asc';
+    }
+    const d = DataHandler.getSortedData(id, type, PURCHASE_DATA);
     this.setData({
-      data: d
+      data: d,
+      sortKey: id,
+      sortType: type
     });
   }
 })

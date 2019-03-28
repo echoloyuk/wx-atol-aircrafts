@@ -9,7 +9,8 @@
         <view class="table-tr">
           <view class="table-th type" id="type" bind:tap="sortHandler">
             机型
-            <view class="sort-icon down"></view>
+            <view 
+              class="sort-icon {{sortKey==='type' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
           <view class="table-th class">舱位</view>
           <view class="table-th capacity">
@@ -17,27 +18,33 @@
           </view>
           <view class="table-th range" id="range" bind:tap="sortHandler">
             里程
-            <view class="sort-icon down"></view>
+            <view 
+              class="sort-icon {{sortKey==='range' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
           <view class="table-th effi" id="fuelEfficient" bind:tap="sortHandler">
             燃油效率
-            <view class="sort-icon down"></view>
+            <view 
+              class="sort-icon {{sortKey==='fuelEfficient' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
           <view class="table-th speed" id="speed" bind:tap="sortHandler">
             航速
-            <view class="sort-icon down"></view>
+            <view 
+              class="sort-icon {{sortKey==='speed' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
           <view class="table-th price" id="price" bind:tap="sortHandler">
             价格
-            <view class="sort-icon down"></view>
+            <view 
+              class="sort-icon {{sortKey==='price' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
           <view class="table-th intr" id="introDate" bind:tap="sortHandler">
             上市时间
-            <view class="sort-icon down"></view>
+            <view 
+              class="sort-icon {{sortKey==='introDate' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
           <view class="table-th end" id="endDate" bind:tap="sortHandler">
             停产时间
-            <view class="sort-icon down"></view>
+            <view 
+              class="sort-icon {{sortKey==='endDate' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
         </view>
         <view class="table-tr" wx:for="{{data}}" wx:for-item="item" wx:key="index">
