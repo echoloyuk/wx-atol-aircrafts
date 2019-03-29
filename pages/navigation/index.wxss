@@ -1,7 +1,17 @@
 /* pages/navigation/index.wxss */
 .nav-header {
-  height: 200rpx;
   background: #ccc;
+  padding: 0;
+}
+.header-image {
+  width: 750rpx;
+  height: 400rpx;
+}
+.title {
+  text-align: center;
+  font-size: 38rpx;
+  margin: 30rpx 0;
+  font-weight: 300;
 }
 .nav-content-panel {
   padding: 24rpx;

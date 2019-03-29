@@ -1,11 +1,17 @@
 <view class="nav-container">
-  <view class="nav-header"></view>
+  <image 
+    class="header-image" 
+    src="/assets/images/banner.jpg"
+    mode='aspectFill' />
+  <view class="title">
+    Air Tycoon Online3 查询助手
+  </view>
   <view class="nav-content-panel">
     <view class="nav-content-row">
       <navigator 
         class="nav-link-item" 
         url="/pages/crafts/index?data=purchase">
-        <text class="nav-link-text">Purchase AirCrafts</text>
+        <text class="nav-link-text">购买飞机</text>
       </navigator>
       <navigator
         class="nav-link-item"
