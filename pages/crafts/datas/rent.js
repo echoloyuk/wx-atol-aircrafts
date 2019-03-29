@@ -23,12 +23,12 @@ module.exports = [
       "B",
       "E"
     ],
-    "capacity": "○239* 242",
+    "capacity": "242",
     "payload": "7222",
     "range": "7.4",
     "fuelEfficient": "0.70",
-    "speed": "○16,050* 16,350",
-    "price": "○1,391* 1,417",
+    "speed": "16,350",
+    "price": "1,417",
     "introDate": "1983.01",
     "endDate": "2001.08"
   },

@@ -1,6 +1,6 @@
 // pages/crafts/index.js
 const PURCHASE_DATA = require('./datas/purchase.js');
-
+const RENT_DATA = require('./datas/rent.js');
 const DataHandler = require('./datahandler/datahandler.js');
 
 Page({
@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    data: PURCHASE_DATA,
+    data: [],
     sortType: '',
     sortKey: '',
     showFilter: false,
@@ -44,7 +44,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    let d;
+    if (this.options.data === 'rent') {
+      d = RENT_DATA;
+    } else {
+      d = PURCHASE_DATA;
+    }
+    this.originData = d;
+    this.setData({
+      data: d
+    });
   },
 
   /**
@@ -98,7 +107,7 @@ Page({
     } else {
       type = 'asc';
     }
-    const d = DataHandler.getSortedData(id, type, PURCHASE_DATA);
+    const d = DataHandler.getSortedData(id, type, this.originData);
     this.setData({
       data: d,
       sortKey: id,

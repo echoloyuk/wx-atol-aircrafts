@@ -2,12 +2,16 @@
   <view class="nav-header"></view>
   <view class="nav-content-panel">
     <view class="nav-content-row">
-      <navigator class="nav-link-item" url="/pages/crafts/index">
+      <navigator 
+        class="nav-link-item" 
+        url="/pages/crafts/index?data=purchase">
         <text class="nav-link-text">Purchase AirCrafts</text>
       </navigator>
-      <view class="nav-link-item">
+      <navigator
+        class="nav-link-item"
+        url="/pages/crafts/index?data=rent">
         <text class="nav-link-text">Rent AirCrafts</text>
-      </view>
+      </navigator>
     </view>
   </view>
 </view>

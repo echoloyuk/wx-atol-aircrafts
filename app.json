@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/crafts/index",
     "pages/navigation/index",
+    "pages/crafts/index",
     "pages/logs/logs"
   ],
   "window":{

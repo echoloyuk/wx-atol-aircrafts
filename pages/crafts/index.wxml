@@ -46,7 +46,7 @@
     </view>
   </popup>
   <view class="crafts-content-panel">
-    <scroll-view class="crafts-scroll-panel">
+    <scroll-view class="crafts-scroll-panel" scroll-x="true">
       <view class="crafts-table">
         <view class="table-tr">
           <view 
