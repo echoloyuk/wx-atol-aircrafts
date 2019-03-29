@@ -58,3 +58,16 @@
 .sort-icon.down {
   transform: rotateZ(180deg);
 }
+.filter-panel {
+  padding-bottom: 50rpx;
+}
+.filter-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12rpx 24rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.filter-text {
+  font-size: 30rpx;
+}

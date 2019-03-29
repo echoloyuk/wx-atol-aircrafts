@@ -1,0 +1,42 @@
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0.4;
+}
+.popup-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  background-color: #fff;
+}
+.show-popup {
+  animation: goingup .3s ease-out both;
+}
+.show-mask {
+  animation: showingmask .3s ease-out alternate;
+}
+
+@keyframes showingmask {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes goingup {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}

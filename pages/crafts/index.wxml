@@ -1,8 +1,50 @@
 <!--pages/crafts/index.wxml-->
 <view class="crafts-container">
-  <view class="crafts-header-panel">
+  <view class="crafts-header-panel" bind:tap="tapFilterHandler">
     <text>Header</text>
   </view>
+  <popup 
+    show="{{showFilter}}"
+    bind:onTapMask="tapMaskHandler">
+    <view class="filter-panel">
+      <view class="filter-item">
+        <view class="filter-text">机型</view>
+        <switch checked="{{showing.type}}" />
+      </view>
+      <view class="filter-item">
+        <view class="filter-text">舱位</view>
+        <switch checked="{{showing.className}}" />
+      </view>
+      <view class="filter-item">
+        <view class="filter-text">运力</view>
+        <switch checked="{{showing.capacityAndPayload}}" />
+      </view>
+      <view class="filter-item">
+        <view class="filter-text">里程</view>
+        <switch checked="{{showing.range}}" />
+      </view>
+      <view class="filter-item">
+        <view class="filter-text">燃油效率</view>
+        <switch checked="{{showing.fuelEfficient}}" />
+      </view>
+      <view class="filter-item">
+        <view class="filter-text">航速</view>
+        <switch checked="{{showing.speed}}" />
+      </view>
+      <view class="filter-item">
+        <view class="filter-text">价格</view>
+        <switch checked="{{showing.price}}" />
+      </view>
+      <view class="filter-item">
+        <view class="filter-text">上市时间</view>
+        <switch checked="{{showing.introDate}}" />
+      </view>
+      <view class="filter-item">
+        <view class="filter-text">停产时间</view>
+        <switch checked="{{showing.endDate}}" />
+      </view>
+    </view>
+  </popup>
   <view class="crafts-content-panel">
     <scroll-view scroll-x="true">
       <view class="crafts-table">

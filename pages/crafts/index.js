@@ -12,16 +12,18 @@ Page({
     data: PURCHASE_DATA,
     sortType: '',
     sortKey: '',
-    showType: true,
-    showClass: true,
-    showCapacity: true,
-    showRange: true,
-    showFuel: true,
-    showSpeed: true,
-    showPrice: true,
-    showIntro: true,
-    showEnd: true,
-    showPopup: false
+    showFilter: false,
+    showing: {
+      type: true,
+      className: true,
+      capacityAndPayload: true,
+      range: true,
+      fuelEfficient: true,
+      speed: true,
+      price: true,
+      introDate: true,
+      endDate: true
+    }
   },
 
   /**
@@ -102,5 +104,15 @@ Page({
       sortKey: id,
       sortType: type
     });
+  },
+  tapFilterHandler: function () {
+    this.setData({
+      showFilter: true
+    });
+  },
+  tapMaskHandler: function () {
+    this.setData({
+      showFilter: false
+    })
   }
 })
