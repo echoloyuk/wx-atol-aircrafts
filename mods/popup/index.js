@@ -12,6 +12,9 @@ Component({
   methods: {
     tapMaskHandler: function () {
       this.triggerEvent('onTapMask');
+    },
+    moveTableHandler: function () {
+      
     }
   }
 })

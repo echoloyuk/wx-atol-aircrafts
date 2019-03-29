@@ -5,7 +5,7 @@
 .crafts-table {
   display: table;
   border-collapse: collapse;
-  min-width: 702rpx;
+  min-width: 701rpx;
 }
 .table-tr {
   display: table-row;

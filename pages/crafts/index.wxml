@@ -9,96 +9,129 @@
     <view class="filter-panel">
       <view class="filter-item">
         <view class="filter-text">机型</view>
-        <switch checked="{{showing.type}}" />
+        <switch id="type" bind:change="changeSwitchHandler" checked="{{showing.type}}" />
       </view>
       <view class="filter-item">
         <view class="filter-text">舱位</view>
-        <switch checked="{{showing.className}}" />
+        <switch id="className" bind:change="changeSwitchHandler" checked="{{showing.className}}" />
       </view>
       <view class="filter-item">
         <view class="filter-text">运力</view>
-        <switch checked="{{showing.capacityAndPayload}}" />
+        <switch id="capacityAndPayload" bind:change="changeSwitchHandler" checked="{{showing.capacityAndPayload}}" />
       </view>
       <view class="filter-item">
         <view class="filter-text">里程</view>
-        <switch checked="{{showing.range}}" />
+        <switch id="range" bind:change="changeSwitchHandler" checked="{{showing.range}}" />
       </view>
       <view class="filter-item">
         <view class="filter-text">燃油效率</view>
-        <switch checked="{{showing.fuelEfficient}}" />
+        <switch  id="fuelEfficient" bind:change="changeSwitchHandler" checked="{{showing.fuelEfficient}}" />
       </view>
       <view class="filter-item">
         <view class="filter-text">航速</view>
-        <switch checked="{{showing.speed}}" />
+        <switch  id="speed" bind:change="changeSwitchHandler" checked="{{showing.speed}}" />
       </view>
       <view class="filter-item">
         <view class="filter-text">价格</view>
-        <switch checked="{{showing.price}}" />
+        <switch  id="price" bind:change="changeSwitchHandler" checked="{{showing.price}}" />
       </view>
       <view class="filter-item">
         <view class="filter-text">上市时间</view>
-        <switch checked="{{showing.introDate}}" />
+        <switch id="introDate" bind:change="changeSwitchHandler" checked="{{showing.introDate}}" />
       </view>
       <view class="filter-item">
         <view class="filter-text">停产时间</view>
-        <switch checked="{{showing.endDate}}" />
+        <switch id="endDate" bind:change="changeSwitchHandler" checked="{{showing.endDate}}" />
       </view>
     </view>
   </popup>
   <view class="crafts-content-panel">
-    <scroll-view scroll-x="true">
+    <scroll-view class="crafts-scroll-panel">
       <view class="crafts-table">
         <view class="table-tr">
-          <view class="table-th type" id="type" bind:tap="sortHandler">
+          <view 
+            wx:if="{{showing.type}}" 
+            class="table-th type" 
+            id="type" 
+            bind:tap="sortHandler">
             机型
             <view 
               class="sort-icon {{sortKey==='type' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
-          <view class="table-th class">舱位</view>
-          <view class="table-th capacity">
+          <view 
+            wx:if="{{showing.className}}" 
+            class="table-th class">
+            舱位
+          </view>
+          <view 
+            wx:if="{{showing.capacityAndPayload}}" 
+            class="table-th capacity">
             运力
           </view>
-          <view class="table-th range" id="range" bind:tap="sortHandler">
+          <view 
+            wx:if="{{showing.range}}" 
+            class="table-th range" id="range" 
+            bind:tap="sortHandler">
             里程
             <view 
               class="sort-icon {{sortKey==='range' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
-          <view class="table-th effi" id="fuelEfficient" bind:tap="sortHandler">
+          <view 
+            wx:if="{{showing.fuelEfficient}}" 
+            class="table-th effi" 
+            id="fuelEfficient" 
+            bind:tap="sortHandler">
             燃油效率
             <view 
               class="sort-icon {{sortKey==='fuelEfficient' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
-          <view class="table-th speed" id="speed" bind:tap="sortHandler">
+          <view 
+            wx:if="{{showing.speed}}" 
+            class="table-th speed" 
+            id="speed" 
+            bind:tap="sortHandler">
             航速
             <view 
               class="sort-icon {{sortKey==='speed' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
-          <view class="table-th price" id="price" bind:tap="sortHandler">
+          <view 
+            wx:if="{{showing.price}}" 
+            class="table-th price" 
+            id="price" 
+            bind:tap="sortHandler">
             价格
             <view 
               class="sort-icon {{sortKey==='price' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
-          <view class="table-th intr" id="introDate" bind:tap="sortHandler">
+          <view 
+            wx:if="{{showing.introDate}}" 
+            class="table-th intr" 
+            id="introDate" 
+            bind:tap="sortHandler">
             上市时间
             <view 
               class="sort-icon {{sortKey==='introDate' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
-          <view class="table-th end" id="endDate" bind:tap="sortHandler">
+          <view 
+            wx:if="{{showing.endDate}}" 
+            class="table-th end" 
+            id="endDate" 
+            bind:tap="sortHandler">
             停产时间
             <view 
               class="sort-icon {{sortKey==='endDate' ? 'current' + (sortType === 'asc' ? ' down' : '') : 'down'}}" />
           </view>
         </view>
         <view class="table-tr" wx:for="{{data}}" wx:for-item="item" wx:key="index">
-          <view class="table-td type">{{item.type}}</view>
-          <view class="table-td class">{{item.className}}</view>
-          <view class="table-td capacity">{{item.capacity !== '0' ? item.capacity : item.payload + 't'}}</view>
-          <view class="table-td range">{{item.range}}</view>
-          <view class="table-td effi">{{item.fuelEfficient}}</view>
-          <view class="table-td speed">{{item.speed}}</view>
-          <view class="table-td price">{{item.price}}</view>
-          <view class="table-td intr">{{item.introDate}}</view>
-          <view class="table-td end">{{item.endDate}}</view>
+          <view wx:if="{{showing.type}}" class="table-td type">{{item.type}}</view>
+          <view wx:if="{{showing.className}}" class="table-td class">{{item.className}}</view>
+          <view wx:if="{{showing.capacityAndPayload}}" class="table-td capacity">{{item.capacity !== '0' ? item.capacity : item.payload + 't'}}</view>
+          <view wx:if="{{showing.range}}" class="table-td range">{{item.range}}</view>
+          <view wx:if="{{showing.fuelEfficient}}" class="table-td effi">{{item.fuelEfficient}}</view>
+          <view wx:if="{{showing.speed}}" class="table-td speed">{{item.speed}}</view>
+          <view wx:if="{{showing.price}}" class="table-td price">{{item.price}}</view>
+          <view wx:if="{{showing.introDate}}" class="table-td intr">{{item.introDate}}</view>
+          <view wx:if="{{showing.endDate}}" class="table-td end">{{item.endDate}}</view>
         </view>
       </view>
     </scroll-view>

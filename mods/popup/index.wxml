@@ -1,8 +1,11 @@
 <view hidden="{{!show}}" class="popup-container">
   <view 
     class="mask {{show? 'show-mask' : ''}}"
-    bind:tap="tapMaskHandler" />
-  <view class="popup-panel {{show ? 'show-popup' : ''}}">
+    bind:tap="tapMaskHandler"
+    catch:touchmove="moveTableHandler" />
+  <view 
+    class="popup-panel {{show ? 'show-popup' : ''}}"
+    catch:touchmove="moveTableHandler">
     <scroll-view>
       <slot></slot>
     </scroll-view>

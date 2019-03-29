@@ -15,14 +15,14 @@ Page({
     showFilter: false,
     showing: {
       type: true,
-      className: true,
+      className: false,
       capacityAndPayload: true,
       range: true,
-      fuelEfficient: true,
-      speed: true,
+      fuelEfficient: false,
+      speed: false,
       price: true,
       introDate: true,
-      endDate: true
+      endDate: false
     }
   },
 
@@ -114,5 +114,14 @@ Page({
     this.setData({
       showFilter: false
     })
+  },
+  changeSwitchHandler: function (e) {
+    const val = e.detail.value;
+    const id = e.currentTarget.id;
+    const newShowing = {...this.data.showing};
+    newShowing[id] = val;
+    this.setData({
+      showing: newShowing
+    });
   }
 })
