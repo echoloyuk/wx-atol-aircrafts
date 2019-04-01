@@ -1,7 +1,18 @@
 <!--pages/crafts/index.wxml-->
 <view class="crafts-container">
-  <view class="crafts-header-panel" bind:tap="tapFilterHandler">
-    <text>Header</text>
+  <view class="crafts-header-panel">
+    <image 
+      class="header-bg"
+      src="/assets/images/banner1.jpg"
+      mode='aspectFill' />
+    <text class="header-text">飞机查询</text>
+  </view>
+  <view class='column-btn' bind:tap="tapFilterHandler">
+    <image 
+      class='column-btn-icon'
+      src='/assets/images/column_btn_icon.png'
+      mode='aspectFill' />
+    <text>修改显示列</text>
   </view>
   <popup 
     show="{{showFilter}}"

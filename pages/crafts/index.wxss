@@ -1,4 +1,44 @@
 /* pages/crafts/index.wxss */
+.crafts-header-panel {
+  height: 139rpx;
+  position: relative;
+}
+.header-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 750rpx;
+  height: 139rpx;
+}
+.header-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 40rpx;
+  font-weight: 300;
+  z-index: 10;
+}
+.column-btn {
+  height: 60rpx;
+  line-height: 60rpx;
+  border: 1rpx solid #324772;
+  text-align: center;
+  margin: 24rpx 24rpx 0;
+  font-size: 28rpx;
+  font-weight: 300;
+  color: #324772;
+  border-radius: 8rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column-btn-icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 20rpx;
+}
 .crafts-content-panel {
   padding: 24rpx;
 }

@@ -9,7 +9,7 @@
 }
 .title {
   text-align: center;
-  font-size: 38rpx;
+  font-size: 42rpx;
   margin: 30rpx 0;
   font-weight: 300;
 }
@@ -25,9 +25,33 @@
   text-align: center;
   width: 340rpx;
   height: 340rpx;
-  background: #ccc;
+  background: #ddd;
+  position: relative;
+  overflow: hidden;
+}
+.nav-item-image {
+  position: absolute;
+  width: 340rpx;
+  height: 340rpx;
+  left: 0;
+  top: 0;
+}
+.nav-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.61;
 }
 .nav-link-text {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 28rpx;
+  font-size: 40rpx;
+  font-weight: 300;
 }

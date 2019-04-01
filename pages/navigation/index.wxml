@@ -11,12 +11,17 @@
       <navigator 
         class="nav-link-item" 
         url="/pages/crafts/index?data=purchase">
-        <text class="nav-link-text">购买飞机</text>
+        <image 
+          class="nav-item-image" 
+          src="/assets/images/logo1.jpg"
+          mode='aspectFit' />
+        <view class="nav-mask"></view>
+        <text class="nav-link-text">飞机查询</text>
       </navigator>
       <navigator
         class="nav-link-item"
-        url="/pages/crafts/index?data=rent">
-        <text class="nav-link-text">Rent AirCrafts</text>
+        url="">
+        <text class="nav-link-text">建设中...</text>
       </navigator>
     </view>
   </view>

@@ -1,13 +1,12 @@
 {
   "pages":[
     "pages/navigation/index",
-    "pages/crafts/index",
-    "pages/logs/logs"
+    "pages/crafts/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#bbdffa",
+    "navigationBarTitleText": "ATOL3查询助手",
     "navigationBarTextStyle":"black"
   }
 }
